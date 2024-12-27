@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>template</title>
+        <script>
+            function greet(){
+                alert('Hello, ' + document.querySelector("#name").value);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div style="font-size: 28px">
+            Welcome to home page!
+            <br> <!--New line-->
+            style="font-size: 28px
+        </div>
+
+        <div class="header">
+            <ul style="list-style-type: none"> <!--No * infront of list-->
+                <li>This is header</li>
+            </ul>
+        </div>
+
+        <!--form-->
+        <form onsubmit="greet(); return false;">
+            <input id="name" placeholder="Enter here" type ="text">
+            <input type="submit">
+        </form>
+        <br>
+        <form class="firstForm">
+            <input type="text" placeholder="enter here"></input>
+            <button id="enter">Button</button>
+            <p id="display"> This will change</p>
+        </form>
+        
+        <script src="index.js"></script>
+
+
+        <!--javascript-->
+        <button id = "red"> R</button>
+        <button id = "green"> G</button>
+        <button id = "blue"> B</button>
+        <button id = "white"> W</button>
+        <script>
+            let body = document.querySelector("body")
+            document.querySelector("#red").addEventListener("click", function(){
+                body.style.backgroundColor="red";
+            })
+            document.querySelector("#green").addEventListener("click", function(){
+                body.style.backgroundColor="green";
+            })
+            document.querySelector("#blue").addEventListener("click", function(){
+                body.style.backgroundColor="blue";
+            })
+            document.querySelector("#white").addEventListener("click", function(){
+                body.style.backgroundColor="white";
+            })
+        </script>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright &#169;  Peng</p>
+            <p>&copy; 2024 Peng. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+</html>
